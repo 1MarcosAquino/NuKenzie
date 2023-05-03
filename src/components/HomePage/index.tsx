@@ -1,6 +1,7 @@
 import Titles from '../Titles';
 import Button from '../Button';
 import './style.css';
+import illustration from '../../../public/Illustration.svg';
 
 interface iHomePageProps {
     setHome: React.Dispatch<React.SetStateAction<boolean>>;
@@ -26,10 +27,7 @@ const HomePage = ({ setHome }: iHomePageProps) => {
                     />
                 </section>
                 <aside>
-                    <img
-                        src="../../../public/Illustration.svg"
-                        alt="illustration"
-                    />
+                    <img src={illustration} alt="illustration" />
                 </aside>
             </div>
         </main>
