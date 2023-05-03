@@ -1,0 +1,50 @@
+.home {
+    background-color: var(--gray-4);
+    color: var(--gray-1);
+
+    padding-top: 70px;
+    padding-bottom: 40px;
+
+    height: 100%;
+    width: 100%;
+}
+
+.home .container {
+    width: 75%;
+}
+
+.home section {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.home aside {
+    margin-top: 20px;
+}
+
+.home img {
+    width: 100%;
+}
+@media (min-width: 798px) {
+    main > div {
+        display: grid;
+        grid-template-columns: auto 60%;
+        gap: 20px;
+    }
+
+    .home section {
+        padding: 30% 50px;
+        padding-bottom: 20%;
+
+        gap: 20px;
+    }
+
+    .home aside {
+        margin-top: 0;
+    }
+    .home button {
+        width: 241px;
+        height: 40px;
+    }
+}

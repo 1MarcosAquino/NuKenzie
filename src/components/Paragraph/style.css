@@ -1,0 +1,13 @@
+.exemple {
+    color: var(--gray-3);
+    font-size: small;
+}
+p.moeda {
+    display: block;
+    position: absolute;
+    margin: 10px 90px;
+}
+
+.total {
+    color: var(--color-primary-2);
+}

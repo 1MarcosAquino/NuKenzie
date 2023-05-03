@@ -1,0 +1,16 @@
+input {
+    text-indent: 10px;
+    outline: var(--gray-2);
+    border: transparent;
+    background-color: var(--gray-2);
+}
+
+input#description {
+    width: auto;
+    height: 52.8px;
+}
+
+input#value {
+    width: 120px;
+    height: 48px;
+}

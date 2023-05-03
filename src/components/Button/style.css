@@ -1,0 +1,45 @@
+button {
+    cursor: pointer;
+}
+
+.button {
+    background-color: var(--color-primary-1);
+    color: var(--gray-1);
+
+    border: transparent;
+    border-radius: 6px;
+
+    padding: 8px 70px;
+
+    height: 48px;
+}
+
+.button:hover {
+    background-color: var(--color-primary-2);
+}
+
+.logout {
+    background-color: var(--gray-2);
+    color: var(--gray-4);
+
+    padding: 10px;
+
+    border-radius: 4px;
+    border: transparent;
+}
+
+.logout:hover {
+    background-color: var(--gray-3);
+    color: var(--gray-2);
+}
+
+.button__image {
+    height: 25px;
+    width: 25px;
+
+    border: transparent;
+
+    background-image: url('../../assets/images/trash.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}

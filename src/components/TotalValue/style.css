@@ -1,0 +1,27 @@
+.totalValue {
+    height: 106px;
+
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+
+    border: 1.5px solid var(--gray-2);
+    border-radius: 4px;
+
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+    padding: 20px 15px;
+}
+
+.totalValue div {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+@media (min-width: 798px) {
+    .totalValue {
+        margin-top: 0px;
+    }
+}

@@ -1,0 +1,9 @@
+select#valueType {
+    width: 150px;
+    height: 48px;
+    text-indent: 10px;
+
+    outline: var(--gray-2);
+    border: transparent;
+    background-color: var(--gray-2);
+}

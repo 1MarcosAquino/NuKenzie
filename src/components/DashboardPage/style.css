@@ -1,0 +1,18 @@
+.dashboard {
+    padding-top: 20px;
+    height: 100vh;
+}
+
+.dashboard aside {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+/* dashboard container */
+@media (min-width: 798px) {
+    main.dashboard {
+        display: grid;
+        grid-template-columns: auto 50%;
+        gap: 30px;
+    }
+}
