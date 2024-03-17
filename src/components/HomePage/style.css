@@ -6,44 +6,49 @@
     padding-bottom: 40px;
 
     height: 100vh;
+    width: 100vw;
+    overflow: auto;
 }
 
 .home .container {
-    width: 75%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 2rem;
+
+    max-width: 1280px;
 }
 
 .home section {
+    width: 90%;
     display: flex;
     flex-direction: column;
     gap: 25px;
-}
-
-.home aside {
-    margin-top: 20px;
+    max-width: 350px;
 }
 
 .home img {
     width: 100%;
 }
+
+.home button {
+    margin: 0 auto;
+
+    width: 241px;
+    height: 40px;
+}
+
 @media (min-width: 798px) {
-    main > div {
-        display: grid;
-        grid-template-columns: auto 60%;
-        gap: 20px;
+    .home .container {
+        flex-direction: row;
+        column-gap: 4rem;
     }
 
     .home section {
-        padding: 30% 50px;
-        padding-bottom: 20%;
-
-        gap: 20px;
-    }
-
-    .home aside {
-        margin-top: 0;
+        max-width: 30%;
     }
     .home button {
-        width: 241px;
-        height: 40px;
+        margin: 0;
     }
 }

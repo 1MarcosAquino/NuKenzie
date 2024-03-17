@@ -9,6 +9,8 @@
     --color-primary-2: #e34981;
     --color-secondary: #03b898;
 
+    --primary-color: var(--color-primary-1);
+
     --gray-1: #f8f9fa;
     --gray-2: #e9ecef;
     --gray-3: #868e96;
@@ -17,6 +19,17 @@
     --shadow-1: #00000020;
 
     font-family: 'Nunito', sans-serif;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+    height: 8px;
+    background-color: var(--gray-4);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--primary-color);
+    border-radius: 8px;
 }
 
 .container {
