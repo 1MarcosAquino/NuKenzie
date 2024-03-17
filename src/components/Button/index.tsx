@@ -2,15 +2,15 @@ import React from 'react';
 import './style.css';
 
 interface iButtonProps {
-    string: string;
-    classBtn: string;
-    onClick?: (event: React.MouseEvent<HTMLButtonElement>) => void;
+    text: string;
+    className: string;
+    click: () => void;
 }
 
-const Button = ({ string, classBtn, onClick }: iButtonProps) => {
+const Button = ({ text, className, click }: iButtonProps) => {
     return (
-        <button className={classBtn} onClick={onClick}>
-            {string}
+        <button className={className} onClick={() => click()}>
+            {text}
         </button>
     );
 };

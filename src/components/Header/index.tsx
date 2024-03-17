@@ -4,21 +4,15 @@ import Titles from '../Titles';
 
 import './style.css';
 
-interface iHeaderProps {
-    setHome: React.Dispatch<React.SetStateAction<boolean>>;
-}
-
-const Header = ({ setHome }: iHeaderProps) => {
+const Header = ({ action }: { action: () => void }) => {
     return (
         <header>
             <div className="container">
                 <Titles type={'h1'} origin={'title__dashboard'} />
                 <Button
-                    onClick={() => {
-                        setHome(true);
-                    }}
-                    string={'Inicio'}
-                    classBtn={'logout'}
+                    click={() => action()}
+                    text="Inicio"
+                    className="logout"
                 />
             </div>
         </header>

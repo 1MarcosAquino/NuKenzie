@@ -21,9 +21,9 @@ const HomePage = ({ setHome }: iHomePageProps) => {
                     <h3 className="title--5">de forma rápida e segura</h3>
 
                     <Button
-                        string="Iniciar"
-                        onClick={() => setHome(false)}
-                        classBtn="button"
+                        text="Iniciar"
+                        click={() => setHome(false)}
+                        className="button"
                     />
                 </section>
                 <aside>

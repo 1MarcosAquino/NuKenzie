@@ -24,7 +24,7 @@ const Dashboard = ({ setHome }: iDashboardProps) => {
 
     return (
         <>
-            <Header setHome={setHome} />
+            <Header action={() => setHome(true)} />
             <main className="dashboard container">
                 <section>
                     <Form values={values} setValues={setValues} />
