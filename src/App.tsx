@@ -7,11 +7,8 @@ function App() {
 
     return (
         <>
-            {home ? (
-                <HomePage setHome={setHome} />
-            ) : (
-                <Dashboard setHome={setHome} />
-            )}
+            {home && <HomePage setHome={setHome} />}
+            {!home && <Dashboard setHome={setHome} />}
         </>
     );
 }
