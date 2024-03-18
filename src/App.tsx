@@ -7,8 +7,8 @@ function App() {
 
     return (
         <>
-            {home && <HomePage setHome={setHome} />}
-            {!home && <Dashboard setHome={setHome} />}
+            {home && <HomePage action={() => setHome(false)} />}
+            {!home && <Dashboard action={() => setHome(true)} />}
         </>
     );
 }

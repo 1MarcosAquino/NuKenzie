@@ -11,9 +11,9 @@ import Button from '../Button';
 
 import './style.css';
 
-interface iDashboardProps {
-    setHome: React.Dispatch<React.SetStateAction<boolean>>;
-}
+// interface iDashboardProps {
+//     setHome: React.Dispatch<React.SetStateAction<boolean>>;
+// }
 
 export interface iValues {
     id: number;
@@ -22,7 +22,7 @@ export interface iValues {
     valueType: string;
 }
 
-const Dashboard = ({ setHome }: iDashboardProps) => {
+const Dashboard = ({ action }: { action: () => void }) => {
     const [values, setValues] = useState<iValues[]>([]);
 
     return (
@@ -31,7 +31,7 @@ const Dashboard = ({ setHome }: iDashboardProps) => {
                 <div className="container">
                     <Titles type={'h1'} origin="title__dashboard" />
                     <Button
-                        click={() => setHome(true)}
+                        click={() => action()}
                         text="Inicio"
                         className="logout"
                     />
