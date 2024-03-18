@@ -1,15 +1,17 @@
-import React from 'react';
 import './style.css';
 
-const Input = ({ name, type, placeholder, ...rest }) => {
+const Input = ({ name, type, placeholder, label, ...rest }) => {
     return (
-        <input
-            id={name}
-            name={name}
-            type={type}
-            placeholder={placeholder}
-            {...rest}
-        />
+        <>
+            <label htmlFor={name}>{label}</label>
+            <input
+                id={name}
+                name={name}
+                type={type}
+                placeholder={'Digite ' + placeholder}
+                {...rest}
+            />
+        </>
     );
 };
 

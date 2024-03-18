@@ -9,6 +9,12 @@ const FinancialSummary = ({ values, setValues }) => {
         setValues(values.filter((obj) => obj.id !== idElement));
     }
 
+    const { format } = Intl.NumberFormat('pt-BR', {
+        style: 'currency',
+        currency: 'BRL',
+        maximumFractionDigits: 2,
+    });
+
     return values.map((ele) => {
         const { id, description, value, valueType } = ele;
 
@@ -20,15 +26,10 @@ const FinancialSummary = ({ values, setValues }) => {
                 </div>
 
                 <div>
-                    <Paragraph
-                        text={new Intl.NumberFormat('pt-BR', {
-                            style: 'currency',
-                            currency: 'BRL',
-                        }).format(value)}
-                    />
+                    <Paragraph text={format(value)} />
                     <Button
-                        onClick={() => deleteElement(id)}
-                        classBtn={'button__image'}
+                        click={() => deleteElement(id)}
+                        className="button__image"
                     />
                 </div>
             </div>

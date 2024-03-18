@@ -1,13 +1,14 @@
-import React from 'react';
-import Option from '../Option';
 import './style.css';
 
-const Select = ({ name, ...rest }) => {
+const Select = ({ name, label, ...rest }) => {
     return (
-        <select name={name} id={name} {...rest}>
-            <Option name="Entrada" />
-            <Option name="Saída" />
-        </select>
+        <>
+            <label htmlFor={name}>{label}</label>
+            <select name={name} id={name} {...rest}>
+                <option value="Entrada">Entrada</option>
+                <option value="Saída">Saída</option>
+            </select>
+        </>
     );
 };
 

@@ -1,4 +1,3 @@
-import React from 'react';
 import './style.css';
 
 interface iButtonProps {
@@ -9,9 +8,7 @@ interface iButtonProps {
 
 const Button = ({ text, className, click }: iButtonProps) => {
     return (
-        <button className={className} onClick={() => click()}>
-            {text}
-        </button>
+        <button className={className} onClick={() => click()} children={text} />
     );
 };
 

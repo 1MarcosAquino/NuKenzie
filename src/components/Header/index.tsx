@@ -1,22 +1,9 @@
-import React from 'react';
-import Button from '../Button';
-import Titles from '../Titles';
+import { ReactNode } from 'react';
 
 import './style.css';
 
-const Header = ({ action }: { action: () => void }) => {
-    return (
-        <header>
-            <div className="container">
-                <Titles type={'h1'} origin={'title__dashboard'} />
-                <Button
-                    click={() => action()}
-                    text="Inicio"
-                    className="logout"
-                />
-            </div>
-        </header>
-    );
+const Header = ({ children }: { children: ReactNode }): ReactNode => {
+    return <header>{children}</header>;
 };
 
 export default Header;
