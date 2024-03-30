@@ -3,11 +3,7 @@ import Button from '../Button';
 import './style.css';
 import illustration from '../../../public/Illustration.svg';
 
-interface iHomePageProps {
-    setHome: React.Dispatch<React.SetStateAction<boolean>>;
-}
-
-const HomePage = ({ setHome }: iHomePageProps) => {
+const HomePage = ({ action }: { action: (flag: boolean) => void }) => {
     return (
         <main className="home">
             <div className="container">
@@ -22,7 +18,7 @@ const HomePage = ({ setHome }: iHomePageProps) => {
 
                     <Button
                         text="Iniciar"
-                        click={() => setHome(false)}
+                        click={() => action(false)}
                         className="button"
                     />
                 </section>
