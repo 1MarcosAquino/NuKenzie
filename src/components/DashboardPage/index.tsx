@@ -1,12 +1,11 @@
 import { useState } from 'react';
+
 import Form from '../Form';
 import EmptyElement from '../EmptyElement';
 import TotalValue from '../TotalValue';
 import FinancialSummary from '../FinancialSummary';
 import Header from '../Header';
 import Titles from '../Titles';
-
-import Button from '../Button';
 
 import './style.css';
 import Logo from '../Logo';
@@ -18,7 +17,7 @@ export interface iValues {
     valueType: string;
 }
 
-const Dashboard = ({ action }: { action: (flag: boolean) => void }) => {
+const Dashboard = () => {
     const [values, setValues] = useState<iValues[]>([]);
 
     return (
@@ -27,11 +26,9 @@ const Dashboard = ({ action }: { action: (flag: boolean) => void }) => {
                 <div className="container">
                     <Logo origin="dashboard" />
 
-                    <Button
-                        click={() => action(true)}
-                        text="Inicio"
-                        className="logout"
-                    />
+                    <a className="logout" href="/home">
+                        Inicio
+                    </a>
                 </div>
             </Header>
             <main className="dashboard container">

@@ -3,7 +3,7 @@ import './style.css';
 import illustration from '../../../public/Illustration.svg';
 import Logo from '../Logo';
 
-const HomePage = ({ action }: { action: (flag: boolean) => void }) => {
+const HomePage = () => {
     return (
         <main className="home">
             <div className="container">
@@ -15,11 +15,9 @@ const HomePage = ({ action }: { action: (flag: boolean) => void }) => {
                     </h2>
                     <h3 className="title--5">de forma rápida e segura</h3>
 
-                    <Button
-                        text="Iniciar"
-                        click={() => action(false)}
-                        className="button"
-                    />
+                    <a href="/dashboard" className="button">
+                        Iniciar
+                    </a>
                 </section>
                 <aside>
                     <img src={illustration} alt="illustration" />

@@ -4,6 +4,14 @@
     box-sizing: border-box;
 }
 
+a {
+    text-align: center;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 :root {
     --color-primary-1: #fd377e;
     --color-primary-2: #e34981;
