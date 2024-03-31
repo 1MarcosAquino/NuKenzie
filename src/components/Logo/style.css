@@ -1,0 +1,12 @@
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+    color: var(--color-primary-1);
+}
+
+.home-logo_color {
+    color: var(--gray-1);
+}
+.dashboard-logo_color {
+    color: var(--gray-4);
+}

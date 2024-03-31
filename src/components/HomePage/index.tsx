@@ -1,15 +1,14 @@
-import Titles from '../Titles';
 import Button from '../Button';
 import './style.css';
 import illustration from '../../../public/Illustration.svg';
+import Logo from '../Logo';
 
 const HomePage = ({ action }: { action: (flag: boolean) => void }) => {
     return (
         <main className="home">
             <div className="container">
                 <section>
-                    <Titles type="h1" classTitle="title--1" />
-                    <h1 className="title--1"></h1>
+                    <Logo origin="home" />
 
                     <h2 className="title--0">
                         Centralize o controle das suas finanças

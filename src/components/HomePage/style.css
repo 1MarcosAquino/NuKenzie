@@ -40,8 +40,13 @@
 }
 
 @media (min-width: 798px) {
+    .home {
+        position: fixed;
+    }
     .home .container {
         flex-direction: row;
+        justify-content: center;
+        align-items: center;
         column-gap: 4rem;
     }
 

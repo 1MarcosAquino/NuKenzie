@@ -7,9 +7,9 @@ import Header from '../Header';
 import Titles from '../Titles';
 
 import Button from '../Button';
-// import Titles from '../Titles';
 
 import './style.css';
+import Logo from '../Logo';
 
 export interface iValues {
     id: number;
@@ -25,7 +25,8 @@ const Dashboard = ({ action }: { action: (flag: boolean) => void }) => {
         <>
             <Header>
                 <div className="container">
-                    <Titles type={'h1'} origin="title__dashboard" />
+                    <Logo origin="dashboard" />
+
                     <Button
                         click={() => action(true)}
                         text="Inicio"
